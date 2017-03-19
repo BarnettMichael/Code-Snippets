@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>NUnit Test</Title>
+      <Author>Michael Barnett</Author>  <!--Edited from a template written by Rusty Divine-->
+      <Description>NUnit Test Template</Description>
+      <Shortcut>ut</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>uow</ID>
+          <ToolTip>Unit of work being tested</ToolTip>
+          <Default>UnitOfWork</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>initialcondition</ID>
+          <ToolTip>Initial state of the system under test</ToolTip>
+          <Default>WithInitialCondition</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>expectedresult</ID>
+          <ToolTip>Expected state of system after test</ToolTip>
+          <Default>Should</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Kind="method decl">
+        <![CDATA[
+[Test]
+public void $uow$_$initialcondition$_$expectedresult$()
+{
+	//Arrange
+	$end$
+
+	//Act
+
+
+	//Assert
+
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

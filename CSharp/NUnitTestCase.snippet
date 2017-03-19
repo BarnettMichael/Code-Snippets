@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>NUnit Test Case</Title>
+      <Author>Michael Barnett</Author>
+      <Description>Parameterised NUnit Test Snippet</Description>
+      <Shortcut>utp</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>uow</ID>
+          <ToolTip>Unit of work being tested</ToolTip>
+          <Default>UnitOfWork</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>initialcondition</ID>
+          <ToolTip>Initial state of the system under test</ToolTip>
+          <Default>WithInitialCondition</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>expectedresult</ID>
+          <ToolTip>Expected state of system after test</ToolTip>
+          <Default>Should</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>initialconditions</ID>
+          <ToolTip>Values to be passed into test</ToolTip>
+          <Default>InputValues</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>testvariabletype</ID>
+          <ToolTip>Type of variable to be used throughout test</ToolTip>
+          <Default>INT</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>testvariable</ID>
+          <ToolTip>Variable to be used throughout test</ToolTip>
+          <Default>input</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Kind="method decl">
+        <![CDATA[
+[TestCase($initialconditions$)]
+public void $uow$_$initialcondition$_$expectedresult$($testvariabletype$ $testvariable$)
+{
+	//Arrange
+	$end$
+
+	//Act
+
+
+	//Assert
+
+}
+        ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

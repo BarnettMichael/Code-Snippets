@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>BasicSnippetSkeleton</Title>
+      <Author>Michael Barnett</Author>
+      <Description>Description = Information displayed when viewed using code snippet manager</Description>
+      <Shortcut>snippetskeleton</Shortcut> <!-- Sets the keyboard shortcut / keyword used to insert snippet into document-->
+      <HelpUrl>https://msdn.microsoft.com/en-us/library/ms171418.aspx</HelpUrl>
+    </Header>
+    <Snippet>
+      <Declarations> <!-- Declare replacements / variables here either as string literal or object instances of some other type-->
+        <Literal Editable="true">
+          <ID>TestLiteral</ID>
+          <ToolTip>This is the tooltip for example literal replacement</ToolTip>
+          <Default>InitalValueOfLiteralString</Default>
+        </Literal>
+        <Object Editable="true">
+          <ID>ObjectReplacement</ID>
+          <Type>System.Data.SqlClient.SqlConnection</Type>
+          <ToolTip>This is the tooltip for the object replacement</ToolTip>
+          <Default>dcConnection</Default>
+        </Object>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[Code To Be Inserted Goes Here
+        Like this -- Replacements / variables are referenced within this block as follows
+        $TestLiteral$ is the TestLiteral declaration
+        $ObjectReplacement$ is the ObjectReplacement declaration
+        ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
